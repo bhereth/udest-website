@@ -11,6 +11,19 @@
     {{ content }}
   </div>
 
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Load the images from Jekyll's data file
+    var images = {{ site.data.images | jsonify }};
+
+    // Get a random image
+    var randomImage = images[Math.floor(Math.random() * images.length)];
+
+    // Set the random image to the img element
+    document.getElementById('dynamicImage').src = randomImage;
+  });
+</script>
+
   {% include footer.html %}
 </body>
 
