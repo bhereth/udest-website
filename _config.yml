@@ -60,7 +60,7 @@ plugins:
 
 author:
   name   : "uDEST"
-  avatar : "/assets/images/uDestLogo_Square.png"
+  avatar : "website/assets/images/uDestLogo_Square.png"
   bio    : "We support each other in the creation, manipulation, analysis, and visualization of data and information."
   links:
     - label: "GitHub"
